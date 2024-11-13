@@ -1,45 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/13 13:30:10 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/13 14:20:15 by opopov           ###   ########.fr       */
+/*   Created: 2024/11/13 14:23:07 by opopov            #+#    #+#             */
+/*   Updated: 2024/11/13 15:16:38 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+int	ft_atoi(const char *nptr)
 {
-	size_t	a;
-	size_t	b;
+	int	res;
+	int	a;
+	int	min;
 
+	res = 0;
 	a = 0;
-	b = 0;
-	if (!big && !little)
+	min = 1;
+	if (!nptr)
 	{
-		return (NULL);
+		return (0);
 	}
-	if (little[a] == '\0')
+	while (nptr[a] == ' ' || nptr[a] == '\n'
+		|| nptr[a] == '\t' || nptr[a] == '\v'
+		|| nptr[a] == '\v' || nptr[a] == '\f'
+		|| nptr[a] == '\r')
 	{
-		return ((char *)big);
+		a++;
 	}
-	while (big[a] != '\0' && a < len)
+	if (nptr[a] == '-' || nptr[a] == '+')
 	{
-		b = 0;
-		while (big[a + b] == little[b] && (a + b) < len)
+		if(nptr[a] == '-')
 		{
-			if (little[b] == '\0')
-			{
-				return ((char *)&big[a]);
-			}
-			b++;
+			min *= -1;
 		}
 		a++;
 	}
-	return (NULL);
+	while (nptr[a] >= 48 && nptr[a] <= 57)
+	{
+		res *= 10;
+		res += nptr[a] - '0';
+		a++;
+	}
+	return (res * min);
 }

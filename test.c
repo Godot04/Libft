@@ -6,7 +6,7 @@
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:24:50 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/13 13:48:05 by opopov           ###   ########.fr       */
+/*   Updated: 2024/11/13 15:17:18 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define RED "\033[0;31m"
 #define GREEN "\033[0;32m"
@@ -242,7 +243,27 @@ int main(void)
 
 
 	// test strnstr function
-	printf(BLUE"strnstr function\n" RESET);
+	// printf(BLUE"strnstr function\n" RESET);
+	// char *tstring1 = "I love points ...";
+	// char *tstring2 = "I love points ...";
+	// char *tch = "points";
+	// size_t gh = 17;
+	// ft_strnstr(tstring1, tch, gh) == strnstr(tstring1, tch, gh)
+	// ? printf(GREEN"result1: %s\nresult2: %s\n" RESET, ft_strnstr(tstring1, tch, gh), strnstr(tstring2, tch, gh))
+	// : printf(RED"result1: %s\nresult2: %s\n" RESET, ft_strnstr(tstring1, tch, gh), strnstr(tstring2, tch, gh));
+	// printf("\n");
+
+
+	// test atoi function
+	printf(BLUE"atoi function\n" RESET);
+	char *fstring1 = "\n -1234,5f";
+	char *fstring2 = "\n -1234,5f";
+	ft_atoi(fstring1) == atoi(fstring2)
+	? printf(GREEN"result1: %d\nresult2: %d\n" RESET, ft_atoi(fstring1), atoi(fstring2))
+	: printf(RED"result1: %d\nresult2: %d\n" RESET, ft_atoi(fstring1), atoi(fstring2));
+	printf("\n");
+
+
 
 	return (0);
 }
