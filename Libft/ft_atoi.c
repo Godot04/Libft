@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_spacecalc(const char *nptr, int a)
+static int	ft_spacecalc(const char *nptr, int a)
 {
 	while (nptr[a] == ' ' || nptr[a] == '\n'
 		|| nptr[a] == '\t' || nptr[a] == '\v'
@@ -23,7 +23,7 @@ int	ft_spacecalc(const char *nptr, int a)
 	return (a);
 }
 
-int	ft_plusminus(const char *nptr, int *a, int min)
+static int	ft_plusminus(const char *nptr, int *a, int min)
 {
 	if (nptr[*a] == '-' || nptr[*a] == '+')
 	{
@@ -51,13 +51,10 @@ int	ft_atoi(const char *nptr)
 	min = ft_plusminus(nptr, &a, min);
 	while (nptr[a] >= 48 && nptr[a] <= 57)
 	{
-		if (res > (2147483647 - (nptr[a] - '0')) / 10)
-		{
-			if (min == 1)
-				return (-1);
-			else
-				return (0);
-		}
+		if (min == 1 && res > (2147483647 - (nptr[a] - '0')) / 10)
+			return (-1);
+		if (min == -1 && res > (2147483648 - (nptr[a] - '0')) / 10)
+			return (0);
 		res = res * 10 + (nptr[a] - '0');
 		a++;
 	}
