@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 14:08:30 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/20 12:40:23 by opopov           ###   ########.fr       */
+/*   Created: 2024/11/18 10:46:12 by opopov            #+#    #+#             */
+/*   Updated: 2024/11/20 13:52:42 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int arg)
+void	ft_putendl_fd(char *s, int fd)
 {
-	if (arg >= 32 && arg < 127)
+	size_t	i;
+
+	if (!s)
 	{
-		return (16384);
+		return ;
 	}
-	else
+	i = 0;
+	while (s[i] != '\0')
 	{
-		return (0);
+		write(fd, &s[i], 1);
+		i++;
 	}
+	write(fd, "\n", 1);
 }

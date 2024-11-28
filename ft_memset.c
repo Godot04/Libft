@@ -6,7 +6,7 @@
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:35:04 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/12 09:46:47 by opopov           ###   ########.fr       */
+/*   Updated: 2024/11/15 13:24:52 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char *ptr;
-	unsigned char value;
+	unsigned char	*ptr;
+	unsigned char	value;
 
 	value = (unsigned char)c;
 	ptr = (unsigned char *)s;

@@ -6,18 +6,18 @@
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:22:23 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/12 13:55:00 by opopov           ###   ########.fr       */
+/*   Updated: 2024/11/20 12:47:39 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	a;
 
 	a = 0;
-	while(s[a] != '\0')
+	while (s[a] != '\0')
 	{
 		a++;
 	}

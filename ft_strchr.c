@@ -6,7 +6,7 @@
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:26:02 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/13 13:13:23 by opopov           ###   ########.fr       */
+/*   Updated: 2024/11/26 17:10:18 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')
 	{
-		if(*s == (char) c)
+		if (*s == (unsigned char ) c)
 		{
 			return ((char *)s);
 		}
 		s++;
 	}
-	if(c == '\0')
+	if ((unsigned char ) c == '\0')
 	{
 		return ((char *)s);
 	}

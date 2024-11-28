@@ -6,7 +6,7 @@
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:02:54 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/12 09:40:09 by opopov           ###   ########.fr       */
+/*   Updated: 2024/11/20 12:48:14 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,11 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
-	int	a;
 
-	a = 0;
 	ptr = (unsigned char *)s;
-	while(n--)
+	while (n--)
 	{
 		*ptr = 0;
 		ptr++;
-		a++;
 	}
-	ptr[a] = '\0';
 }

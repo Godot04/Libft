@@ -6,7 +6,7 @@
 /*   By: opopov <opopov@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 10:31:39 by opopov            #+#    #+#             */
-/*   Updated: 2024/11/13 12:20:32 by opopov           ###   ########.fr       */
+/*   Updated: 2024/11/26 15:32:34 by opopov           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,25 +25,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	if (s < d && d < s + n)
 	{
-		d += n;
-		s += n;
-		while (n > 0)
-		{
-			*d = *s;
-			d--;
-			s--;
-			n--;
-		}
+		d += n - 1;
+		s += n - 1;
+		while (n--)
+			*(d--) = *(s--);
 	}
 	else
 	{
-		while (n > 0)
-		{
-			*d = *s;
-			d++;
-			s++;
-			n--;
-		}
+		while (n--)
+			*(d++) = *(s++);
 	}
 	return (dest);
 }
