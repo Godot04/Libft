@@ -94,36 +94,8 @@ This creates `libft.a` - a static library containing all the functions.
 - **Language**: C
 - **Compiler**: gcc
 - **Flags**: `-Wall -Wextra -Werror`
-- **Norm**: 42 Norminette v3
+- **Norm**: 42 Norminette
 - **Library Type**: Static library (`.a`)
-
-## 🚀 Usage Example
-
-```c
-#include "libft.h"
-#include <stdio.h>
-
-int main(void)
-{
-    char *str = "Hello, 42!";
-    char *result;
-
-    // Using ft_strlen
-    printf("Length: %zu\n", ft_strlen(str));
-
-    // Using ft_split
-    char **words = ft_split("Hello World 42", ' ');
-    for (int i = 0; words[i]; i++)
-        printf("Word %d: %s\n", i, words[i]);
-
-    // Using ft_itoa
-    result = ft_itoa(42);
-    printf("Number as string: %s\n", result);
-    free(result);
-
-    return (0);
-}
-```
 
 ## 📝 Notes
 
@@ -135,7 +107,3 @@ int main(void)
 ## 👤 Author
 
 **opopov** - 42 School Student
-
----
-
-*This is my first project at 42 School - a journey into systems programming and low-level C development! 🚀*
