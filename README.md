@@ -1,6 +1,6 @@
 # Libft - My First C Library
 
-![42 School](https://img.shields.io/badge/42-School-000000?style=flat-square&logo=42&logoColor=white)
+!(https://img.shields.io/badge/42-School-000000?style=flat-square&logo=42&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![Norminette](https://img.shields.io/badge/Norminette-passing-success?style=flat-square)
 
