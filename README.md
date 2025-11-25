@@ -6,9 +6,9 @@
 
 ## 📖 About
 
-**Libft** is my first project at 42 School. This project involves recreating various standard C library functions from scratch, as well as implementing additional utility functions. The goal is to gain a deep understanding of how these fundamental functions work and to build a personal library that can be used in future 42 projects.
+**Libft** is first project at 42 School. This project involves recreating various standard C library functions from scratch, as well as implementing additional utility functions. The goal is to gain a deep understanding of how these fundamental functions work and to build a personal library that can be used in future 42 projects.
 
-This is **my first programming project** at 42, where I learned the basics of C programming, memory management, string manipulation, and proper code documentation.
+In that project I learned the basics of C programming, memory management, string manipulation, and proper code documentation.
 
 ## 🎯 Project Goals
 
