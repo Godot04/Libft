@@ -89,55 +89,6 @@ This creates `libft.a` - a static library containing all the functions.
 - `make fclean` - Remove object files and the library
 - `make re` - Recompile everything from scratch
 
-### Using the Library
-
-To use this library in your projects:
-
-1. Compile the library:
-   ```bash
-   make
-   ```
-
-2. Include the header in your C file:
-   ```c
-   #include "libft.h"
-   ```
-
-3. Compile your project with the library:
-   ```bash
-   gcc your_file.c -L. -lft -o your_program
-   ```
-
-## 📁 Project Structure
-
-```
-libft/
-├── Makefile           # Build automation
-├── libft.h            # Header file with function prototypes
-├── ft_*.c             # Implementation files
-└── README.md          # This file
-```
-
-## 💡 Key Learnings
-
-Through this project, I learned:
-
-- **Memory Management**: Understanding `malloc`, `free`, and preventing memory leaks
-- **Pointer Manipulation**: Working with pointers and memory addresses
-- **String Operations**: Deep understanding of how C strings work
-- **Makefile**: Automating compilation with makefiles
-- **Norminette**: Following strict coding standards
-- **Problem Solving**: Breaking down complex problems into smaller functions
-- **Edge Cases**: Handling NULL pointers, empty strings, and boundary conditions
-
-## 🔍 Highlights
-
-Some interesting implementations:
-
-- **ft_split**: Splits a string into an array of words based on a delimiter - involves dynamic memory allocation and careful memory management
-- **ft_atoi**: Handles whitespace, signs, and overflow cases similar to the standard library
-- **ft_strtrim**: Efficiently removes characters from both ends of a string
-
 ## ⚙️ Technical Details
 
 - **Language**: C
@@ -180,10 +131,6 @@ int main(void)
 - Memory is properly managed with no leaks
 - Functions handle edge cases (NULL pointers, empty strings, etc.)
 - The library is designed to be reusable in future 42 projects
-
-## 🎓 About 42 School
-
-42 is a project-based programming school with a peer-to-peer learning approach and no teachers or formal classes. Students learn through hands-on projects, collaboration, and continuous evaluation.
 
 ## 👤 Author
 
