@@ -8,7 +8,7 @@
 
 **Libft** is first project at 42 School. This project involves recreating various standard C library functions from scratch, as well as implementing additional utility functions. The goal is to gain a deep understanding of how these fundamental functions work and to build a personal library that can be used in future 42 projects.
 
-In that project I learned the basics of C programming, memory management, string manipulation, and proper code documentation.
+In that project I learned the basics of C programming, memory management and string manipulation.
 
 ## 🎯 Project Goals
 
@@ -46,7 +46,7 @@ Standard C library functions that I've recreated:
 - `ft_memset` - Fill memory with a constant byte
 - `ft_bzero` - Zero out a byte string
 - `ft_memcpy` - Copy memory area
-- `ft_memmove` - Copy memory area (handles overlapping)
+- `ft_memmove` - Copy n bytes memory area (handles overlapping)
 - `ft_memchr` - Scan memory for a character
 - `ft_memcmp` - Compare memory areas
 - `ft_calloc` - Allocate and zero-initialize memory
