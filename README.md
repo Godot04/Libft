@@ -16,7 +16,6 @@ In that project I learned the basics of C programming, memory management, string
 - Learn proper memory management and avoid memory leaks
 - Follow the 42 School coding standards (Norminette)
 - Create a reusable static library (`libft.a`)
-- Develop problem-solving skills through low-level programming
 
 ## 📚 Functions Implemented
 
@@ -85,7 +84,7 @@ This creates `libft.a` - a static library containing all the functions.
 
 ### Available Commands
 
-- `make` or `make all` - Compile the library
+- `make` - Compile the library
 - `make clean` - Remove object files
 - `make fclean` - Remove object files and the library
 - `make re` - Recompile everything from scratch
